@@ -1,0 +1,7 @@
+subgenome,progenitor,progenitor_genes,recent_anchors,segments,breaks_per_1k_anchors,dcj_raw,fractionation_ratio
+An,rapa,46250,32250,152,4.71,44,0.382
+Aj,rapa,46250,32840,187,5.69,70,0.328
+Bj,nigra,59851,38072,394,10.35,170,0.375
+Bc,nigra,59851,36588,347,9.48,172,0.355
+Cn,oleracea,59225,33827,319,9.43,132,0.434
+Cc,oleracea,59225,34599,316,9.13,123,0.448

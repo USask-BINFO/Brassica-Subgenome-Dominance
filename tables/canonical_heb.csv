@@ -1,0 +1,8 @@
+sample,species,contest,sub1,sub2,tested,toward1,toward2,ratio,ci_lo,ci_hi,p,resolved,favoured,sens_min,sens_max
+juncea_pollen,juncea,A vs B,A,B,6510,1355,1641,0.826,0.768,0.887,1.881997373863063e-07,True,B,0.798,0.846
+juncea_stigma,juncea,A vs B,A,B,13087,2049,2359,0.869,0.819,0.922,3.225022820047163e-06,True,B,0.869,0.884
+napus_pollen,napus,A vs C,A,C,8179,1224,1288,0.95,0.879,1.028,0.2087496472128146,False,,0.89,0.969
+napus_stigma,napus,A vs C,A,C,17023,1771,1554,1.14,1.065,1.22,0.00017886198516312902,True,A,1.096,1.14
+carinata_pollen,carinata,B vs C,B,C,5497,1254,1135,1.105,1.02,1.197,0.01575203297638549,True,B,1.097,1.124
+carinata_stigmaE,carinata,B vs C,B,C,11266,1862,1738,1.071,1.004,1.144,0.04034959818112387,True,B,1.057,1.081
+carinata_stigmaL,carinata,B vs C,B,C,11883,2356,2124,1.109,1.046,1.176,0.0005566050448167538,True,B,1.07,1.128

@@ -1,0 +1,3 @@
+species,direction,chrom,pairs,first_gene,last_gene,partner_fold
+carinata,Bca_B lost,B3,5,BcaB03g035720.3DH.1,BcaB03g036030.3DH.1,1.37
+carinata,Bca_C lost,C4,5,BcaC04g067810.3DH.1,BcaC04g068130.3DH.1,0.82

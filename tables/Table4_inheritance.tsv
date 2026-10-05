@@ -1,0 +1,8 @@
+Species	Tissue	Pairs	Spearman rho	R2	Slope	Inherited %	Novel %	Lost %	Reversed %
+B. carinata	pollen	5497	0.432	0.178	0.421	39.1	16.0	18.2	12.5
+B. carinata	stigmaE	11266	0.266	0.082	0.264	21.1	15.2	24.4	9.9
+B. carinata	stigmaL	11883	0.303	0.093	0.298	23.8	15.6	23.0	10.0
+B. juncea	pollen	6510	0.463	0.205	0.438	38.3	16.1	18.5	11.5
+B. juncea	stigma	13087	0.305	0.105	0.305	23.8	14.9	24.6	10.3
+B. napus	pollen	8179	0.453	0.206	0.311	32.1	13.2	25.4	8.6
+B. napus	stigma	17023	0.312	0.115	0.228	18.7	11.6	28.2	6.7
