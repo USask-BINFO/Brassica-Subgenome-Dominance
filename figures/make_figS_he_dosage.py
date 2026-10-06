@@ -57,5 +57,5 @@ for ax_, L in zip(axes, "ab"):
     p = ax_.get_position()
     fig.text(p.x0 - 0.048, p.y1 + 0.05, L, fontsize=10, fontweight="bold", va="top", ha="left")
 for ext in ("png", "pdf"):
-    fig.savefig(os.path.join(HERE, "FigS20_he_dosage.%s" % ext), bbox_inches="tight")
-print("wrote FigS20_he_dosage")
+    fig.savefig(os.path.join(HERE, "FigS5_he_dosage.%s" % ext), bbox_inches="tight")
+print("wrote FigS5_he_dosage")

@@ -41,23 +41,22 @@ def dens(idx,c,s,e):
 stage=sys.argv[1] if len(sys.argv)>1 else "validate"
 
 if stage=="validate":
-    mine_p=os.path.join(RM,"validate_rapa","rapa_A01.mine.LTR.gff")
+    mine_p=os.path.join(RM,"validate_rapa","rapa_A01.LTR.gff")
     if not os.path.exists(mine_p): sys.exit("not found: %s - run scripts/14 validate first"%mine_p)
     mine=feats(mine_p)
     n=sum(len(v) for v in mine.values()); b=sum(y-x+1 for v in mine.values() for x,y in v)
-    print("VALIDATION on rapa chromosome A01, same library, my RepeatMasker run vs Sampath's")
+    print("Validation on rapa chromosome A01: this run against the reference annotation")
     print("%-26s %10s %12s %10s" % ("","features","LTR bp","% of chr"))
-    print("%-26s %10d %12d %9.4f%%" % ("Sampath",TARGET["n"],TARGET["bp"],100*TARGET["bp"]/TARGET["chrlen"]))
-    print("%-26s %10d %12d %9.4f%%" % ("mine",n,b,100*b/TARGET["chrlen"]))
+    print("%-26s %10d %12d %9.4f%%" % ("reference",TARGET["n"],TARGET["bp"],100*TARGET["bp"]/TARGET["chrlen"]))
+    print("%-26s %10d %12d %9.4f%%" % ("this run",n,b,100*b/TARGET["chrlen"]))
     dn=100*(n-TARGET["n"])/TARGET["n"]; db=100*(b-TARGET["bp"])/TARGET["bp"]
     print("%-26s %9.1f%% %11.1f%%" % ("difference",dn,db))
     print()
     if abs(dn)<=10 and abs(db)<=10:
-        print("PASS: settings reproduce Sampath's calls. nigra run will be comparable.")
+        print("PASS: the settings reproduce the reference calls, so the nigra run is comparable.")
     else:
-        print("FAIL: settings differ from Sampath's. Do NOT treat a nigra run as comparable")
-        print("      to the other five until this is reconciled (try -s, or -q, or ask Sampath")
-        print("      for the exact command).")
+        print("FAIL: the settings differ from the reference, so a nigra run is not comparable")
+        print("      with the other five until this is reconciled.")
     sys.exit(0)
 
 mine_p=os.path.join(RM,"nigra","nigra.19K.LTR.gff")

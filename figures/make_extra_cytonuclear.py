@@ -36,5 +36,5 @@ for ax,sp in zip(axes,["juncea","carinata"]):
 axes[0].text(0.5,-0.42,"a positive shift in BOTH would support maternal inheritance; it appears only in juncea",
              transform=axes[0].transAxes,ha="left",fontsize=6.6,color=style.ANNOT)
 style.panel(axes[0],"a",dx=-0.22,dy=1.14); style.panel(axes[1],"b",dx=-0.06,dy=1.14)
-for f in ("Fig7_cytonuclear.png","Fig7_cytonuclear.pdf"): fig.savefig(os.path.join(OUT,f))
-print("wrote Fig7_cytonuclear")
+for f in ("extra_cytonuclear.png","extra_cytonuclear.pdf"): fig.savefig(os.path.join(OUT,f))
+print("wrote extra_cytonuclear")

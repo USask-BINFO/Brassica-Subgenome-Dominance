@@ -73,5 +73,5 @@ h = [Rectangle((0,0),1,1, facecolor=style.GREY, edgecolor=style.GREY, label="rec
 fig.legend(handles=h, loc="lower center", ncol=2, frameon=False, fontsize=6.6,
            bbox_to_anchor=(0.5, -0.022))
 for ext in ("png", "pdf"):
-    fig.savefig(os.path.join(HERE, "FigS17_exchanges.%s" % ext), bbox_inches="tight")
-print("wrote FigS17_exchanges")
+    fig.savefig(os.path.join(HERE, "FigS9_exchanges.%s" % ext), bbox_inches="tight")
+print("wrote FigS9_exchanges")

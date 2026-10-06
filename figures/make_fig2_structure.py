@@ -88,5 +88,5 @@ axc.legend(handles=[mpatches.Patch(facecolor=style.GREY,alpha=a,label=m)
            columnspacing=1.6,handlelength=1.1,frameon=False)
 style.panel(axc,"c",dx=-0.075,dy=1.16)
 
-for f in ("Fig5_structure.png","Fig5_structure.pdf"): fig.savefig(os.path.join(OUT,f))
-print("wrote Fig5_structure")
+for f in ("Fig2_structure.png","Fig2_structure.pdf"): fig.savefig(os.path.join(OUT,f))
+print("wrote Fig2_structure")

@@ -96,4 +96,4 @@ for ax_, Lt in zip(axes, "abc"):
     p = ax_.get_position()
     fig.text(p.x0 - 0.045, p.y1 + 0.055, Lt, fontsize=10, fontweight="bold",
              va="top", ha="left")
-save(fig, "FigS15_ltr_layers")
+save(fig, "FigS17_ltr_layers")

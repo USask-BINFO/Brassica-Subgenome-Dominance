@@ -89,7 +89,7 @@ ax.text(0.03, 0.955, "intercept = share with no transversion",
         transform=ax.transAxes, fontsize=6.2, color=style.ANNOT, va="top")
 
 letters(fig, axes)
-save(fig, "FigS11_divergence")
+save(fig, "FigS8_divergence")
 
 R = pd.read_csv(os.path.join(ST, "retention_by_layer.csv"))
 T = pd.read_csv(os.path.join(ST, "retention_total.csv"))
@@ -154,7 +154,7 @@ ax.set_xlabel("retention vs progenitor (pp)")
 ax.set_title("Conserved anchors", fontsize=8)
 
 letters(fig, axes, dx=0.052)
-save(fig, "FigS12_retention")
+save(fig, "FigS6_retention")
 
 C = pd.read_csv(os.path.join(ST, "collinearity_by_chr.csv"))
 fig, ax = plt.subplots(figsize=(4.2, 2.7), layout="constrained")
@@ -173,4 +173,4 @@ ax.legend(handles=[Line2D([], [], color="black", lw=1.4, label="subgenome mean")
                    Line2D([], [], marker="o", ls="none", ms=3.2, color=style.GREY,
                           label="one chromosome")],
           loc="lower left", fontsize=6.5)
-save(fig, "FigS13_collinearity")
+save(fig, "FigS7_collinearity")

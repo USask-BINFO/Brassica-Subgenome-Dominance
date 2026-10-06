@@ -78,7 +78,8 @@ for i,c in enumerate(colnames):
     ax.get_xticklabels()[i].set_color(style.GENOME[c[0]])
 ax.set_yticks(range(len(top))); ax.set_yticklabels(top,fontsize=6.8)
 ax.set_title("stigma: enriched terms among genes with novel or switched bias\n"
-             "rerun: propagated GO, Fisher's exact, BH-corrected, terms of 10-400 genes",fontsize=7.6,pad=6)
+             "propagated GO, Fisher's exact test, Benjamini-Hochberg, terms of 10 to 400 genes",
+             fontsize=7.6,pad=6)
 cb=fig.colorbar(im,ax=ax,fraction=0.030,pad=0.015)
 cb.set_label("$-$log$_{10}$ FDR",fontsize=7); cb.ax.tick_params(labelsize=6)
 cb.outline.set_linewidth(0)

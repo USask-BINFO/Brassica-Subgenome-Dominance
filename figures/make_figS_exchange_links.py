@@ -80,5 +80,5 @@ for row, (sp, s1, s2) in enumerate(SPEC):
 fig.text(0.5, -0.012, "ribbon width is the number of genes; a solid ribbon was recovered from "
          "both block sets, a pale one from one", ha="center", fontsize=6.3, color=style.ANNOT)
 for ext in ("png", "pdf"):
-    fig.savefig(os.path.join(HERE, "FigS19_exchange_links.%s" % ext), bbox_inches="tight")
-print("wrote FigS19_exchange_links")
+    fig.savefig(os.path.join(HERE, "FigS10_exchange_links.%s" % ext), bbox_inches="tight")
+print("wrote FigS10_exchange_links")

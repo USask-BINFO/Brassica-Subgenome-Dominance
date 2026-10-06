@@ -7,8 +7,7 @@
 | Cn | B. napus | B. oleracea | 0.434 | 42 | 0.0222 | 0.2783 | 0.00817 |
 | Cc | B. carinata | B. oleracea | 0.448 | 38 | 0.0220 | 0.2893 | 0.00892 |
 
-Fractionation ratio and DCJ distance are carried over from the synteny analysis.
-Median Ks replaces the quantity previously labelled 'peak Ks': the published values are
-reproduced to within 0.0006 by the median of per-pair Ks over allotetraploidization blocks
-with Ks <= 1, not by a Gaussian-mixture peak. Gene-proximal LTR is the fraction of the 5 kb
+Fractionation ratio and DCJ distance are measured on the synteny blocks between each
+Allo-subgenome and its diploid progenitor. Ks is the median of per-pair Ks over the
+allotetraploidization blocks with Ks <= 1. Gene-proximal LTR is the fraction of the 5 kb
 either side of a gene covered by an annotated LTR, on one common TE library.

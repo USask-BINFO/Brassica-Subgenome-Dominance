@@ -35,14 +35,29 @@ time. That is what lets a feature of a *genome* be told apart from a feature of 
 - `figures/`
   - `style.py` one shared matplotlib style; fixed colour per genome (A blue, B vermilion,
     C green) so a genome is the same colour in every figure, tissue carried by marker
-  - `make_fig2_expression_landscape.py` PCA, scree and replicate correlation, recomputed from the
-    counts
-  - `make_fig3_scoreboard.py` the dominance scoreboard with exact binomial tests and Wilson
-    intervals, at five thresholds
-  - `make_fig4_inheritance.py` allotetraploid bias against progenitor bias; slope, R2 and the
-    four-way split
-  - `make_fig6_genelevel.py` the three paired structural tests, with the subgenome-level contrast
+  - main figures, one script per figure, each named for the figure it writes:
+    - `make_fig2_structure.py` structural asymmetry between the Allo-subgenomes, the diploid
+      progenitors on one transposon library, and the four features on a shared axis
+    - `make_fig3_scoreboard.py` the dominance scoreboard with exact binomial tests and Wilson
+      intervals, at five thresholds
+    - `make_fig4_inheritance.py` allotetraploid bias against progenitor bias; slope, R2 and the
+      four-way split
+    - `make_fig5_genelevel.py` the three paired structural tests, with the subgenome-level contrast
+    - `make_fig6_novel_bias.py` where the lean comes from; class sizes and the per-class ratios
+    - `make_fig7_brsubgenome.py` the dominance ratio inside each Br-subgenome layer
+    - `make_fig8_enrichment.py` GO enrichment among the novel-or-switched genes, in stigma
+  - supplementary figures:
+    - `make_supplementary.py` Figures S1, S3, S4, S12, S13, S18 and S19
+    - `make_figS_ordination.py` Figure S2
+    - `make_figS_he_dosage.py` Figure S5
+    - `make_figS_structure.py` Figures S6, S7 and S8
+    - `make_figS_exchanges.py` Figure S9
+    - `make_figS_exchange_links.py` Figure S10
+    - `make_figS_remaining.py` Figures S11, S15 and S20
+    - `make_figS_pergene_ltr.py` Figures S14 and S17
+    - `make_figS16_coexpr.py` Figure S16
   - `Fig1_evolutionary_relationships.png` the schematic (also `Fig1_hero.png`, downscaled)
+  - `extra_*` plots that were produced during the analysis but are not in the manuscript
 - `tables/`
   - `make_tables.py` builds all four main tables as TSV and markdown
 - `pipeline/` the analysis scripts, numbered in run order; see `pipeline/README.md`
@@ -50,7 +65,7 @@ time. That is what lets a feature of a *genome* be told apart from a feature of 
 ## Reproducing the figures and tables
 
 ```bash
-cd figures && python3 make_fig2_expression_landscape.py   # and make_fig3, make_fig4, make_fig6
+cd figures && for f in make_fig*.py make_supplementary.py; do python3 "$f"; done
 cd ../tables && python3 make_tables.py
 ```
 

@@ -100,10 +100,10 @@ for i,s_ in enumerate(sp_o):
 ax3.set_ylim(len(order),-2.1)
 style.panel(ax3,"c",dx=-0.1,dy=1.10)
 
-for f in ("Fig2_expression_landscape.png","Fig2_expression_landscape.pdf"):
+for f in ("extra_expression_landscape.png","extra_expression_landscape.pdf"):
     fig.savefig(os.path.join(OUT,f))
-print("wrote Fig2_expression_landscape.png / .pdf")
+print("wrote extra_expression_landscape.png / .pdf")
 pd.DataFrame({"library":M.columns,"species":sp,"tissue":ti,
               "PC1":Y[:,0],"PC2":Y[:,1],"PC3":Y[:,2]}).to_csv(
-    os.path.join(OUT,"Fig2_pca_coordinates.csv"), index=False)
-print("wrote Fig2_pca_coordinates.csv")
+    os.path.join(OUT,"extra_pca_coordinates.csv"), index=False)
+print("wrote extra_pca_coordinates.csv")

@@ -95,5 +95,5 @@ fig.text(0.985,0.018,"shaded band: within 5% of balance",ha="right",va="bottom",
          fontsize=6.3,color=style.ANNOT)
 style.panel(axb,"b",dx=-0.082,dy=1.22)
 
-for f in ("Fig6b_novel_bias.png","Fig6b_novel_bias.pdf"): fig.savefig(os.path.join(OUT,f))
-print("wrote Fig6b_novel_bias")
+for f in ("Fig6_novel_bias.png","Fig6_novel_bias.pdf"): fig.savefig(os.path.join(OUT,f))
+print("wrote Fig6_novel_bias")

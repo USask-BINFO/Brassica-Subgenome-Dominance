@@ -78,7 +78,7 @@ ax.legend(handles=[plt.Rectangle((0, 0), 1, 1, fc=style.GENOME[g]) for g in "ABC
           labels=["A", "B", "C"], title="genome", fontsize=6.5, title_fontsize=6.5,
           loc="upper left", ncol=3, handlelength=1.1, columnspacing=0.9)
 letters(fig, axes)
-save(fig, "FigS5_eld")
+save(fig, "FigS11_eld")
 
 H = pd.read_csv(os.path.join(RB, "05_validation", "heb_by_br_subgenome.csv"))
 H["sample"] = H.species + "_" + H.tissue
@@ -111,7 +111,7 @@ ax.legend(handles=[Line2D([], [], marker="o", ls="none", ms=5.5, color=style.GEN
                           label=g) for g in "ABC"],
           fontsize=6.5, loc="upper right", ncol=3, handlelength=1.0, columnspacing=0.8,
           title="leans toward", title_fontsize=6.5)
-save(fig, "FigS6_brsubgenome")
+save(fig, "FigS15_brsubgenome")
 
 E = pd.read_csv(os.path.join(RB, "05_validation", "enrichment_novel_switched.csv"))
 E = E[E.fdr < 0.05]
@@ -152,4 +152,4 @@ for ax, (tis, m) in zip(axes, mats):
 cb = fig.colorbar(im, ax=axes, fraction=0.03, pad=0.02)
 cb.set_label(r"$-\log_{10}$ FDR", fontsize=7)
 cb.ax.tick_params(labelsize=6)
-save(fig, "FigS10_enrichment_full")
+save(fig, "FigS20_enrichment_full")

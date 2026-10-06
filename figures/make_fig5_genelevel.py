@@ -52,5 +52,5 @@ ax2.set_title("the same measures BETWEEN subgenomes differ 1.5-2.1$\times$",
               fontsize=7,color=style.ANNOT,pad=4)
 style.panel(ax2,"b",dx=-0.44,dy=1.20)
 
-for f in ("Fig6_genelevel.png","Fig6_genelevel.pdf"): fig.savefig(os.path.join(OUT,f))
-print("wrote Fig6_genelevel")
+for f in ("Fig5_genelevel.png","Fig5_genelevel.pdf"): fig.savefig(os.path.join(OUT,f))
+print("wrote Fig5_genelevel")

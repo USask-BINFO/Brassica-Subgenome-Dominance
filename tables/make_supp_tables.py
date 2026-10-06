@@ -13,7 +13,7 @@ NICE={s:s.replace("_"," ").replace("stigmaE","stigma (early)").replace("stigmaL"
 D={t:pd.read_csv(os.path.join(REB,"02_heb",t,"heb_summary.csv")).set_index("sample") for t,_ in TH}
 L=[]
 
-L.append("### Table S3. Dominance ratio at every analysis setting\n")
+L.append("### Table S8. Dominance ratio at every analysis setting\n")
 L.append("Ratio of biased pairs, subgenome 1 : subgenome 2. The primary analysis is two-fold with "
          "CDS counting; the other four columns are sensitivity checks.\n")
 L.append("| sample | "+" | ".join(l for _,l in TH)+" | direction |")
@@ -29,7 +29,7 @@ def wilson(k,n,z=1.96):
     p=k/n; dd=1+z*z/n; c=(p+z*z/(2*n))/dd; h=z*np.sqrt(p*(1-p)/n+z*z/(4*n*n))/dd
     lo,hi=c-h,c+h; return lo/(1-lo),hi/(1-hi)
 SUB={"napus":("A","C"),"juncea":("A","B"),"carinata":("B","C")}
-L.append("### Table S3b. The primary analysis in full\n")
+L.append("### Table S8b. The primary analysis in full\n")
 L.append("| sample | contest | tested | toward sub 1 | toward sub 2 | ratio | 95% CI | p | resolved |")
 L.append("|:-|:-|:-|:-|:-|:-|:-|:-|:-|")
 for s in ORDER:
@@ -41,7 +41,7 @@ for s in ORDER:
         ("%.2g"%p if p>=1e-4 else "%.0e"%p),"yes" if not (lo<1<hi) else "no"))
 
 NS=pd.read_csv(os.path.join(REB,"05_validation/novel_switched_split.csv"))
-L.append("\n### Table S5. Biased pairs by what the diploid progenitors did\n")
+L.append("\n### Table S9. Biased pairs by what the diploid progenitors did\n")
 L.append("Switched pairs are anti-parental by definition, so their direction is not interpretable "
          "and is shown for completeness only.\n")
 L.append("| sample | maintained n (ratio) | truly novel n (ratio) | switched n (ratio) | maintained share |")
@@ -60,7 +60,7 @@ for s in ORDER:
              100*(m.t1+m.t2)/tot))
 
 BR=pd.read_csv(os.path.join(REB,"05_validation/heb_by_br_subgenome.csv"))
-L.append("\n### Table S7b. Dominance ratio within each Br-subgenome layer\n")
+L.append("\n### Table S11b. Dominance ratio within each Br-subgenome layer\n")
 L.append("| sample | LF | MF1 | MF2 | whole sample |")
 L.append("|:-|:-|:-|:-|:-|")
 for s in ORDER:
@@ -92,7 +92,7 @@ def _rank(c):
             0 if "ELD_P1" in c else 1 if "ELD_P2" in c else 2 if "additive" in c
             else 3 if "unchanged" in c else 4)
 _pat = sorted(_pat, key=_rank)
-L.append("\n### Table S5b. Inheritance pattern counts per sample\n")
+L.append("\n### Table S9b. Inheritance pattern counts per sample\n")
 L.append("PED, the progenitors differ; PEC, they do not. Within each, the pair's total expression "
          "either resembles one progenitor (ELD), is additive, is unchanged, or is transgressive. "
          "Percentages are of classified pairs.\n")

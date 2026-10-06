@@ -1,4 +1,4 @@
-### Table S3. Dominance ratio at every analysis setting
+### Table S8. Dominance ratio at every analysis setting
 
 Ratio of biased pairs, subgenome 1 : subgenome 2. The primary analysis is two-fold with CDS counting; the other four columns are sensitivity checks.
 
@@ -14,7 +14,7 @@ Ratio of biased pairs, subgenome 1 : subgenome 2. The primary analysis is two-fo
 
 The direction of every contest is the same under all five settings. Only the significance of napus pollen varies, and its ratio stays between 0.890 and 0.969.
 
-### Table S3b. The primary analysis in full
+### Table S8b. The primary analysis in full
 
 | sample | contest | tested | toward sub 1 | toward sub 2 | ratio | 95% CI | p | resolved |
 |:-|:-|:-|:-|:-|:-|:-|:-|:-|
@@ -26,7 +26,7 @@ The direction of every contest is the same under all five settings. Only the sig
 | carinata stigma (early) | B vs C | 11266 | 1862 | 1738 | 1.071 | 1.004-1.144 | 0.04 | yes |
 | carinata stigma (late) | B vs C | 11883 | 2356 | 2124 | 1.109 | 1.046-1.176 | 0.00056 | yes |
 
-### Table S5. Biased pairs by what the diploid progenitors did
+### Table S9. Biased pairs by what the diploid progenitors did
 
 Switched pairs are anti-parental by definition, so their direction is not interpretable and is shown for completeness only.
 
@@ -40,7 +40,7 @@ Switched pairs are anti-parental by definition, so their direction is not interp
 | carinata stigma (early) | 1727 (1.135) | 1120 (0.975) | 753 (1.080) | 48% |
 | carinata stigma (late) | 2236 (1.270) | 1362 (0.965) | 882 (0.978) | 50% |
 
-### Table S7b. Dominance ratio within each Br-subgenome layer
+### Table S11b. Dominance ratio within each Br-subgenome layer
 
 | sample | LF | MF1 | MF2 | whole sample |
 |:-|:-|:-|:-|:-|
@@ -55,7 +55,7 @@ Switched pairs are anti-parental by definition, so their direction is not interp
 \* lean differs from 1:1 at p < 0.05. In napus and carinata the lean is carried by MF1; in napus pollen LF leans the other way, which is why the whole sample does not resolve.
 
 
-### Table S5b. Inheritance pattern counts per sample
+### Table S9b. Inheritance pattern counts per sample
 
 PED, the progenitors differ; PEC, they do not. Within each, the pair's total expression either resembles one progenitor (ELD), is additive, is unchanged, or is transgressive. Percentages are of classified pairs.
 

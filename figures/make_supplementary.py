@@ -30,7 +30,7 @@ x=np.arange(len(M.columns))
 ax.bar(x,expressed.values,color=[style.SPECIES[s] for s in sp],width=0.72,
        edgecolor="white",linewidth=0.3)
 ax.set_xticks(x); ax.set_xticklabels(M.columns,rotation=90,fontsize=5.0)
-ax.set_ylabel("Gref gene copies with $\geq$ 3 reads",fontsize=7.6)
+ax.set_ylabel(r"Gref gene copies with $\geq$ 3 reads",fontsize=7.6)
 ax.set_title("expressed gene copies per library; stigma exceeds pollen in every species",
              fontsize=7.6,color=style.ANNOT,pad=5)
 ax.set_ylim(0,expressed.max()*1.06); ax.set_xlim(-1.0,len(x)-0.0)
@@ -42,7 +42,7 @@ for s_ in dict.fromkeys(sp):
     ax.text(np.mean(idx),-0.30,s_,transform=tr,ha="center",va="top",fontsize=7.0,
             color=style.SPECIES[s_],fontstyle="italic",fontweight="bold",clip_on=False)
 fig.subplots_adjust(left=0.095,right=0.99,top=0.90,bottom=0.30)
-save(fig,"FigS1_expressed_copies")
+save(fig,"FigS3_expressed_copies")
 
 cpm=M/M.sum(axis=0)*1e6; lg=np.log2(cpm+1)
 keep=lg.loc[lg.var(axis=1).sort_values(ascending=False).index[:2000]]
@@ -59,7 +59,7 @@ cb=fig.colorbar(im,ax=ax,fraction=0.044,pad=0.02); cb.set_label("Spearman $r$",f
 cb.ax.tick_params(labelsize=6); cb.outline.set_linewidth(0)
 fig.suptitle("library correlation, hierarchically clustered; the strip marks species",
              fontsize=8.5,y=0.985)
-save(fig,"FigS2_replicate_correlation")
+save(fig,"FigS1_replicate_correlation")
 
 THRESH=[("theta0585_a05","1.5-fold"),("theta1_a05","2-fold"),("span_theta1_a05","2-fold span"),
         ("theta1585_a05","3-fold"),("Q10_theta1_a05","2-fold MAPQ10")]
@@ -90,7 +90,7 @@ ax.legend(fontsize=6.4,ncol=5,loc="lower center",bbox_to_anchor=(0.5,1.015),
 fig.text(0.5,0.965,"the direction of every contest is unchanged by all five settings",
          ha="center",va="bottom",fontsize=7.2,color=style.ANNOT)
 fig.subplots_adjust(left=0.20,right=0.985,top=0.80,bottom=0.155)
-save(fig,"FigS3_threshold_sensitivity")
+save(fig,"FigS19_threshold_sensitivity")
 
 MB=pd.read_csv(os.path.join(REB,"09_mapbias","mapping_bias.csv"))
 MB=MB.rename(columns={"fwd_pct":"fwd","rev_pct":"rev"})
@@ -129,7 +129,7 @@ axes.ravel()[-1].text(0.0,0.5,"slope / $R^2$ on\neach panel\n\ndashed line 1:1",
 fig.supxlabel("bias between the diploid progenitors (log$_2$)",fontsize=7.5)
 fig.supylabel("bias inside the allotetraploid (log$_2$)",fontsize=7.5)
 fig.tight_layout()
-save(fig,"FigS7_inheritance_all")
+save(fig,"FigS12_inheritance_all")
 
 a=pd.read_csv(os.path.join(REB,"05_validation/ltr_vs_bias_all_species.csv"))
 b=pd.read_csv(os.path.join(REB,"05_validation/ltr_vs_bias_coge_sensitivity.csv"))
@@ -144,7 +144,7 @@ ax.axhline(0,color=style.LIGHT,lw=0.5); ax.axvline(0,color=style.LIGHT,lw=0.5)
 ax.set_xlabel("$\\rho$, Br-subgenome BED coordinates"); ax.set_ylabel("$\\rho$, complete CoGe coordinates")
 ax.set_xlim(lo,hi); ax.set_ylim(lo,hi)
 ax.set_title("raising the join rate to 92-98% changes nothing",fontsize=7,color=style.ANNOT,pad=4)
-save(fig,"FigS8_ltr_join_sensitivity")
+save(fig,"FigS18_ltr_join_sensitivity")
 
 er=pd.read_csv(os.path.join(REB,"05_validation/er_control.csv"))
 er["lab"]=er.species+" "+er.tissue
@@ -165,5 +165,5 @@ a2.set_xticks([-0.12,-0.08,-0.04,0.0,0.04])
 a2.legend(fontsize=6.4,loc="lower center",bbox_to_anchor=(0.5,1.01),ncol=2,
           frameon=False,columnspacing=1.4,handletextpad=0.35)
 style.panel(a2,"b",dx=-0.10)
-save(fig,"FigS9_er_control")
+save(fig,"FigS13_er_control")
 print("done")
