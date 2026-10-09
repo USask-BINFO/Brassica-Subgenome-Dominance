@@ -2,13 +2,13 @@
 import pandas as pd, numpy as np, os, statistics
 
 HEB={
- "napus":   ("A","C",{"pollen":0.92,"stigma":1.12}),
- "juncea":  ("A","B",{"pollen":0.84,"stigma":0.88}),
- "carinata":("B","C",{"pollen":1.10,"stigmaE":1.07,"stigmaL":1.10}),
+ "napus":   ("A","C",{"pollen":0.950,"stigma":1.140}),
+ "juncea":  ("A","B",{"pollen":0.826,"stigma":0.869}),
+ "carinata":("B","C",{"pollen":1.105,"stigmaE":1.071,"stigmaL":1.109}),
 }
 ELD={"napus":("A","C",{"pollen":+8.4,"stigma":+33.1}),
-     "juncea":("A","B",{"stigma":+20.0}),
-     "carinata":("B","C",{"stigmaE":-11.5,"stigmaL":-7.3})}
+     "juncea":("A","B",{"pollen":+0.6,"stigma":+20.0}),
+     "carinata":("B","C",{"pollen":+4.6,"stigmaE":-11.5,"stigmaL":-7.3})}
 FRAC={"An":0.382,"Aj":0.328,"Bj":0.375,"Bc":0.355,"Cn":0.434,"Cc":0.448}
 DCJ ={"An":36,"Aj":49,"Bj":43,"Bc":26,"Cn":42,"Cc":38}
 LTR ={"A":0.00543,"B":0.00433,"C":0.00855}

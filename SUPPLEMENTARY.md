@@ -337,7 +337,7 @@ the statistic is not interchangeable. The distribution is strongly zero-inflated
 subgenomes closest to their progenitors retain few transversions at fourfold-degenerate sites.
 The share of pairs with no transversion at any informative fourfold-degenerate codon runs from
 32.2% in A~n~ to 50.2% in C~c~, and it is that last figure which puts the C~c~ median at exactly
-0.000 (Figure S8d).
+0.000 (Figure S8c).
 Sequence identity is reported as the **median** of per-pair percent identity over the same
 recent blocks. It is stable across the identity window: the two C subgenomes are the highest of the six in all
 eight windows from 80-100 to 95-100, and from 91-100 through 95-100 the six values move by at
@@ -511,7 +511,7 @@ only.
 | diploid | density | annotated with the allotetraploids? | ratio |
 |:-|:-|:-|:-|
 | *rapa* | 0.00773 | yes | *oleracea* / *rapa* = **1.45** |
-| *oleracea* | 0.01124 | yes | C~n~ / A~n~ inside *napus* = **1.46-1.47** |
+| *oleracea* | 0.01124 | yes | C~n~ / A~n~ inside *napus* = **1.47** |
 | *nigra* | 0.00688 | no, separate run | no ratio drawn, see below |
 
 *B. nigra* was annotated against the same library with RepeatMasker 4.2.4, which
