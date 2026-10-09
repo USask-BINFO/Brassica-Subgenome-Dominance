@@ -58,6 +58,8 @@ time. That is what lets a feature of a *genome* be told apart from a feature of 
     - `make_figS16_coexpr.py` Figure S16
   - `Fig1_evolutionary_relationships.png` the schematic (also `Fig1_hero.png`, downscaled)
   - `extra_*` plots that were produced during the analysis but are not in the manuscript
+- `synteny/` collinear blocks between each Allo-subgenome and its diploid progenitor, with the
+  block counts behind the Methods
 - `tables/`
   - `make_tables.py` builds all four main tables as TSV and markdown
 - `pipeline/` the analysis scripts, numbered in run order; see `pipeline/README.md`

@@ -2,6 +2,10 @@
 import pandas as pd, numpy as np
 from scipy.stats import fisher_exact
 
+ABSENT_CELLS = {"", "x", "-", "na", "#n/a", "0", "#ref!", "#value!", "null"}
+def present_mask(s):
+    return ~s.astype(str).str.strip().str.lower().isin(ABSENT_CELLS)
+
 IN  = "00_inputs/Subgenomes_Brassica.txt"
 OUT = "08_structure"
 
@@ -30,7 +34,7 @@ print("Arabidopsis genes in the table: %d" % N)
 rows = []
 for tr, cols in TRACK.items():
     for lay, c in zip(LAYER, cols):
-        present = int((df[c].str.strip().str.lower() != "x").sum())
+        present = int(present_mask(df[c]).sum())
         rows.append(dict(track=tr, label=PRETTY[tr], layer=lay,
                          retained=present, total=N, pct=100.0*present/N))
 ret = pd.DataFrame(rows)
@@ -44,7 +48,7 @@ print(piv.loc[order].round(1).to_string())
 
 tot = {}
 for tr, cols in TRACK.items():
-    any_copy = (df[cols].apply(lambda s: s.str.strip().str.lower() != "x")).any(axis=1)
+    any_copy = df[cols].apply(present_mask).any(axis=1)
     tot[tr] = int(any_copy.sum())
 
 print("\n=== total retention, and loss relative to the diploid progenitor ===")

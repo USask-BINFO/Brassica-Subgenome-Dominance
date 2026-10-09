@@ -2,6 +2,10 @@
 import os
 import pandas as pd
 
+ABSENT_CELLS = {"", "x", "-", "na", "#n/a", "0", "#ref!", "#value!", "null"}
+def present_mask(s):
+    return ~s.astype(str).str.strip().str.lower().isin(ABSENT_CELLS)
+
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT  = os.path.join(HERE, "08_structure")
 
@@ -70,8 +74,8 @@ rows = []
 for (sp, gen), cols in TRACK.items():
     assigned = {}
     for lay, c in zip(["LF", "MF1", "MF2"], cols):
-        assigned[lay] = int((SUB[c].str.strip().str.lower() != "x").sum())
-    anyc = (SUB[cols].apply(lambda s: s.str.strip().str.lower() != "x")).any(axis=1).sum()
+        assigned[lay] = int(present_mask(SUB[c]).sum())
+    anyc = SUB[cols].apply(present_mask).any(axis=1).sum()
     rows.append(dict(species=sp, subgenome=gen, anchors=N,
                      LF=assigned["LF"], MF1=assigned["MF1"], MF2=assigned["MF2"],
                      total_assigned=int(anyc),
