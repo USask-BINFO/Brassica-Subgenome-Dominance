@@ -349,12 +349,12 @@ Like K~s~ and 4DTv, identity follows the genome and the reference rather than th
 
 ### Table S6. DCJ distance on a common Arabidopsis framework
 
-**(A) Why a common framework is needed.** Each Allo-subgenome in Table 3 is measured against its
-own diploid, and the three diploid annotations differ in gene number. The *rapa* annotation
-carries about 13,600 fewer genes than the other two and yields roughly half as many breaks in
-local gene order per anchor, so any subgenome measured against *rapa* records a lower distance
-whatever its structure. Distances therefore cluster by progenitor rather than by subgenome, and
-the spread between progenitors is 7.1 times the spread within one.
+**(A) Why a common framework is needed.** Measuring each Allo-subgenome against its own diploid
+makes the distance a property of the progenitor annotation rather than of the subgenome. The
+*rapa* annotation carries about 13,600 fewer genes than the other two and yields roughly half as
+many breaks in local gene order per anchor, so any subgenome measured against *rapa* records a
+lower distance whatever its structure. Distances computed that way cluster by progenitor rather
+than by subgenome, and the spread between progenitors is 7.1 times the spread within one.
 
 | subgenome | progenitor | genes in the progenitor annotation | order breaks per 1,000 anchors |
 |:-|:-|-|-|
@@ -365,31 +365,39 @@ the spread between progenitors is 7.1 times the spread within one.
 | C~n~ | *oleracea* | 59,225 | 9.43 |
 | C~c~ | *oleracea* | 59,225 | 9.13 |
 
-**(B) The ordering on one framework.** Markers were built on the Gref anchor set, identical for
+**(B) The framework used in Table 3.** Markers were built on the Gref anchor set, identical for
 all six subgenomes: each Arabidopsis anchor names at most one gene per Br-subgenome layer in the
 Allo-subgenome and at most one in the diploid, so the correspondence is one-to-one by
 construction and no paralogy has to be filtered. Maximal collinear runs of those anchor pairs are
 the signed markers, and the minimum run length is the one free parameter. On this framework the
 marker counts no longer cluster by progenitor; the ratio of between-progenitor to
-within-progenitor spread falls from 7.1 to 0.67. All three orderings in Table 3 also hold on this
-framework, at every run length from 28 upward.
+within-progenitor spread falls from 7.1 to 0.67. Table 3 reports a minimum run of 30, and all
+three orderings hold at every run length from 28 to 45. Cells give the distance with the marker
+count in parentheses.
 
 | minimum run | A~n~ | A~j~ | B~j~ | B~c~ | C~n~ | C~c~ | *napus* | *carinata* | *juncea* |
 |:-|-|-|-|-|-|-|:-|:-|:-|
-| 28 | 11 | 37 | 35 | 44 | 25 | 51 | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
-| 30 | 10 | 34 | 33 | 38 | 23 | 49 | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
-| 32 | 10 | 32 | 31 | 34 | 22 | 46 | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
-| 34 | 10 | 32 | 29 | 34 | 20 | 44 | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
-| 36 | 10 | 32 | 26 | 34 | 20 | 38 | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
-| 40 | 8 | 30 | 20 | 29 | 14 | 34 | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
-| 45 | 8 | 22 | 18 | 25 | 14 | 29 | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
+| 2 | 30 (74) | 385 (562) | 729 (1001) | 754 (1064) | 94 (154) | 863 (1193) | A~n~ < C~n~ | B~c~ < C~c~ | fails |
+| 3 | 26 (72) | 289 (455) | 528 (760) | 547 (814) | 83 (142) | 579 (908) | A~n~ < C~n~ | B~c~ < C~c~ | fails |
+| 5 | 25 (70) | 183 (348) | 325 (512) | 350 (572) | 74 (132) | 355 (620) | A~n~ < C~n~ | B~c~ < C~c~ | fails |
+| 8 | 20 (63) | 122 (264) | 174 (331) | 190 (386) | 58 (118) | 191 (400) | A~n~ < C~n~ | B~c~ < C~c~ | fails |
+| 12 | 19 (60) | 79 (210) | 124 (242) | 121 (280) | 46 (103) | 118 (284) | A~n~ < C~n~ | fails | fails |
+| 20 | 14 (54) | 48 (153) | 63 (165) | 70 (194) | 33 (87) | 62 (188) | A~n~ < C~n~ | fails | fails |
+| 28 | 11 (48) | 37 (129) | 35 (123) | 44 (150) | 25 (80) | 51 (150) | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
+| **30 (Table 3)** | 10 (46) | 34 (124) | 33 (117) | 38 (141) | 23 (77) | 49 (146) | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
+| 32 | 10 (46) | 32 (119) | 31 (112) | 34 (130) | 22 (76) | 46 (138) | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
+| 34 | 10 (46) | 32 (117) | 29 (107) | 34 (126) | 20 (74) | 44 (132) | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
+| 36 | 10 (46) | 32 (114) | 26 (101) | 34 (122) | 20 (73) | 38 (126) | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
+| 40 | 8 (44) | 30 (111) | 20 (89) | 29 (111) | 14 (68) | 34 (119) | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
+| 45 | 8 (44) | 22 (99) | 18 (80) | 25 (102) | 14 (67) | 29 (104) | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
 
-The framework fixes the direction of each comparison, not the absolute distance, because the
-number of markers is set by the minimum run length rather than by the block sizes behind
-Table 3. Below a minimum run of about 28 the runs are short enough to be dominated by local
-annotation noise, which is progenitor-specific, and the *juncea* comparison is the first to fail,
-as expected: it is the one pairing whose two halves are measured against the two most dissimilar
-annotations, *rapa* and *nigra*. Generated by `pipeline/46_dcj_gref_signed.py`; the diagnostic in
+The run length sets the granularity, so it fixes the direction of each comparison rather than the
+absolute distance: the distances fall by about half between a run of 28 and one of 45 while the
+three orderings do not change. Below about 28 the runs are short enough to be dominated by local
+annotation noise, which is progenitor-specific, and the comparisons fail, *juncea* first at a run
+of 20 and below and *carinata* at 12 and 20. *Juncea* failing first is expected: it is the one
+pairing whose two halves are measured against the two most dissimilar annotations, *rapa* and
+*nigra*. Generated by `pipeline/46_dcj_gref_signed.py`; the diagnostic in
 (A) by `pipeline/45_dcj_anchor_segments.py`.
 
 ---

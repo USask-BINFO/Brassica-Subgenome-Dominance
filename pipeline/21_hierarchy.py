@@ -10,7 +10,7 @@ ELD={"napus":("A","C",{"pollen":+8.4,"stigma":+33.1}),
      "juncea":("A","B",{"pollen":+0.6,"stigma":+20.0}),
      "carinata":("B","C",{"pollen":+4.6,"stigmaE":-11.5,"stigmaL":-7.3})}
 FRAC={"An":0.382,"Aj":0.328,"Bj":0.375,"Bc":0.355,"Cn":0.434,"Cc":0.448}
-DCJ ={"An":36,"Aj":49,"Bj":43,"Bc":26,"Cn":42,"Cc":38}
+DCJ ={"An":10,"Aj":34,"Bj":33,"Bc":38,"Cn":23,"Cc":49}
 LTR ={"A":0.00543,"B":0.00433,"C":0.00855}
 KAKS={"An":0.1825,"Aj":0.1843,"Bj":0.1967,"Bc":0.1921,"Cn":0.2783,"Cc":0.2893}
 
@@ -63,7 +63,7 @@ print("    (napus stigma A>C, carinata B>C), so C is consistently the non-domina
 print("  The disagreement is about A. Structure puts A level with or ahead of B")
 print("    (fractionation A %.3f vs B %.3f, Ka/Ks A %.4f vs B %.4f, both favouring A)," %
       (st['A'][0],st['B'][0],st['A'][3],st['B'][3]))
-print("    yet A LOSES to B in juncea in both tissues (ratio 0.84 and 0.88).")
+print("    yet A LOSES to B in juncea in both tissues (ratio 0.826 and 0.869).")
 print("  So the decoupling is specific: it is not that structure fails to identify the degraded")
 print("  subgenome, it is that structural advantage does not translate into expression advantage")
 print("  for A against B.")
