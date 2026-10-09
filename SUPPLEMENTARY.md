@@ -545,8 +545,52 @@ and they imply different answers for *carinata*, so neither is claimed. Generate
 \* lean differs from 1:1 at p < 0.05. In napus and carinata the lean is carried by MF1; in napus pollen LF leans the other way, which is why the whole sample does not resolve.
 
 ### Table S12. Sample metadata
-*[To be completed by the authors.]* Genotype or accession and seed source of each species, match
-to the reference assembly used, and library identifiers.
+
+One line of each species was used. The columns that can be filled from the analysis are given here; the cells marked *[ ]* need the accession, seed source, growth batch and read accession for each library, which are not recoverable from the data files.
+
+The nine *carinata* libraries are deposited under NCBI BioProject PRJNA600205. The *rapa*, *nigra*, *oleracea*, *napus* and *juncea* libraries are being deposited and their run accessions will be added before publication.
+
+| species | line or accession | seed source | same line as the assembly? | reference assembly | tissue | replicate | library | growth batch | SRA run |
+|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|
+| *rapa* | *[ ]* | *[ ]* | *[ ]* | *rapa* v3.0 | pollen | A | `Bra_PolA` | *[ ]* | *[to be added]* |
+| *rapa* | *[ ]* | *[ ]* | *[ ]* | *rapa* v3.0 | pollen | B | `Bra_PolB` | *[ ]* | *[to be added]* |
+| *rapa* | *[ ]* | *[ ]* | *[ ]* | *rapa* v3.0 | pollen | C | `Bra_PolC` | *[ ]* | *[to be added]* |
+| *rapa* | *[ ]* | *[ ]* | *[ ]* | *rapa* v3.0 | stigma | A | `Bra_StigA` | *[ ]* | *[to be added]* |
+| *rapa* | *[ ]* | *[ ]* | *[ ]* | *rapa* v3.0 | stigma | B | `Bra_StigB` | *[ ]* | *[to be added]* |
+| *rapa* | *[ ]* | *[ ]* | *[ ]* | *rapa* v3.0 | stigma | C | `Bra_StigC` | *[ ]* | *[to be added]* |
+| *nigra* | *[ ]* | *[ ]* | *[ ]* | *nigra* NI100 v2.0 | pollen | A | `Bni_PolA` | *[ ]* | *[to be added]* |
+| *nigra* | *[ ]* | *[ ]* | *[ ]* | *nigra* NI100 v2.0 | pollen | B | `Bni_PolB` | *[ ]* | *[to be added]* |
+| *nigra* | *[ ]* | *[ ]* | *[ ]* | *nigra* NI100 v2.0 | pollen | C | `Bni_PolC` | *[ ]* | *[to be added]* |
+| *nigra* | *[ ]* | *[ ]* | *[ ]* | *nigra* NI100 v2.0 | stigma | A | `Bni_StigA` | *[ ]* | *[to be added]* |
+| *nigra* | *[ ]* | *[ ]* | *[ ]* | *nigra* NI100 v2.0 | stigma | B | `Bni_StigB` | *[ ]* | *[to be added]* |
+| *nigra* | *[ ]* | *[ ]* | *[ ]* | *nigra* NI100 v2.0 | stigma | C | `Bni_StigC` | *[ ]* | *[to be added]* |
+| *oleracea* | *[ ]* | *[ ]* | *[ ]* | *oleracea* To1000 v2.1 | pollen | A | `Bol_PolA` | *[ ]* | *[to be added]* |
+| *oleracea* | *[ ]* | *[ ]* | *[ ]* | *oleracea* To1000 v2.1 | pollen | B | `Bol_PolB` | *[ ]* | *[to be added]* |
+| *oleracea* | *[ ]* | *[ ]* | *[ ]* | *oleracea* To1000 v2.1 | pollen | C | `Bol_PolC` | *[ ]* | *[to be added]* |
+| *oleracea* | *[ ]* | *[ ]* | *[ ]* | *oleracea* To1000 v2.1 | stigma | A | `Bol_StigA` | *[ ]* | *[to be added]* |
+| *oleracea* | *[ ]* | *[ ]* | *[ ]* | *oleracea* To1000 v2.1 | stigma | B | `Bol_StigB` | *[ ]* | *[to be added]* |
+| *oleracea* | *[ ]* | *[ ]* | *[ ]* | *oleracea* To1000 v2.1 | stigma | C | `Bol_StigC` | *[ ]* | *[to be added]* |
+| *napus* | *[ ]* | *[ ]* | *[ ]* | *napus* DH12075 v3.1 | pollen | A | `Bna_PolA` | *[ ]* | *[to be added]* |
+| *napus* | *[ ]* | *[ ]* | *[ ]* | *napus* DH12075 v3.1 | pollen | B | `Bna_PolB` | *[ ]* | *[to be added]* |
+| *napus* | *[ ]* | *[ ]* | *[ ]* | *napus* DH12075 v3.1 | pollen | C | `Bna_PolC` | *[ ]* | *[to be added]* |
+| *napus* | *[ ]* | *[ ]* | *[ ]* | *napus* DH12075 v3.1 | stigma | A | `Bna_StigA` | *[ ]* | *[to be added]* |
+| *napus* | *[ ]* | *[ ]* | *[ ]* | *napus* DH12075 v3.1 | stigma | B | `Bna_StigB` | *[ ]* | *[to be added]* |
+| *napus* | *[ ]* | *[ ]* | *[ ]* | *napus* DH12075 v3.1 | stigma | C | `Bna_StigC` | *[ ]* | *[to be added]* |
+| *juncea* | *[ ]* | *[ ]* | *[ ]* | *juncea* DH v2 | pollen | A | `Bju_PolA` | *[ ]* | *[to be added]* |
+| *juncea* | *[ ]* | *[ ]* | *[ ]* | *juncea* DH v2 | pollen | B | `Bju_PolB` | *[ ]* | *[to be added]* |
+| *juncea* | *[ ]* | *[ ]* | *[ ]* | *juncea* DH v2 | pollen | C | `Bju_PolC` | *[ ]* | *[to be added]* |
+| *juncea* | *[ ]* | *[ ]* | *[ ]* | *juncea* DH v2 | stigma | A | `Bju_StigA` | *[ ]* | *[to be added]* |
+| *juncea* | *[ ]* | *[ ]* | *[ ]* | *juncea* DH v2 | stigma | B | `Bju_StigB` | *[ ]* | *[to be added]* |
+| *juncea* | *[ ]* | *[ ]* | *[ ]* | *juncea* DH v2 | stigma | C | `Bju_StigC` | *[ ]* | *[to be added]* |
+| *carinata* | *[ ]* | *[ ]* | *[ ]* | *carinata* DH v2 | pollen | A | `Bca_PolA` | *[ ]* | *[to be added]* |
+| *carinata* | *[ ]* | *[ ]* | *[ ]* | *carinata* DH v2 | pollen | B | `Bca_PolB` | *[ ]* | *[to be added]* |
+| *carinata* | *[ ]* | *[ ]* | *[ ]* | *carinata* DH v2 | pollen | C | `Bca_PolC` | *[ ]* | *[to be added]* |
+| *carinata* | *[ ]* | *[ ]* | *[ ]* | *carinata* DH v2 | stigma (early) | A | `Bca_E_StigA` | *[ ]* | *[to be added]* |
+| *carinata* | *[ ]* | *[ ]* | *[ ]* | *carinata* DH v2 | stigma (early) | B | `Bca_E_StigB` | *[ ]* | *[to be added]* |
+| *carinata* | *[ ]* | *[ ]* | *[ ]* | *carinata* DH v2 | stigma (early) | C | `Bca_E_StigC` | *[ ]* | *[to be added]* |
+| *carinata* | *[ ]* | *[ ]* | *[ ]* | *carinata* DH v2 | stigma (late) | A | `Bca_L_StigA` | *[ ]* | *[to be added]* |
+| *carinata* | *[ ]* | *[ ]* | *[ ]* | *carinata* DH v2 | stigma (late) | B | `Bca_L_StigB` | *[ ]* | *[to be added]* |
+| *carinata* | *[ ]* | *[ ]* | *[ ]* | *carinata* DH v2 | stigma (late) | C | `Bca_L_StigC` | *[ ]* | *[to be added]* |
 
 ### Table S13. Synteny tables and Br-subgenome assignments
 
