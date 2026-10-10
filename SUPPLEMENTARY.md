@@ -349,12 +349,13 @@ Like K~s~ and 4DTv, identity follows the genome and the reference rather than th
 
 ### Table S6. DCJ distance on a common Arabidopsis framework
 
-**(A) Why a common framework is needed.** Measuring each Allo-subgenome against its own diploid
-makes the distance a property of the progenitor annotation rather than of the subgenome. The
-*rapa* annotation carries about 13,600 fewer genes than the other two and yields roughly half as
-many breaks in local gene order per anchor, so any subgenome measured against *rapa* records a
-lower distance whatever its structure. Distances computed that way cluster by progenitor rather
-than by subgenome, and the spread between progenitors is 7.1 times the spread within one.
+**(A) Why a common framework is needed.** Each Allo-subgenome is compared with its own diploid
+progenitor, but taking the markers from that progenitor's own annotation makes the distance a
+property of the annotation rather than of the subgenome. The *rapa* annotation carries about
+13,600 fewer genes than the other two and yields roughly half as many breaks in local gene order
+per anchor, so any subgenome measured against *rapa* records a lower distance whatever its
+structure. Distances built that way cluster by progenitor rather than by subgenome, and the
+spread between progenitors is 7.1 times the spread within one.
 
 | subgenome | progenitor | genes in the progenitor annotation | order breaks per 1,000 anchors |
 |:-|:-|-|-|
@@ -392,8 +393,8 @@ count in parentheses.
 | 45 | 8 (44) | 22 (99) | 18 (80) | 25 (102) | 14 (67) | 29 (104) | A~n~ < C~n~ | B~c~ < C~c~ | B~j~ < A~j~ |
 
 The run length sets the granularity, so it fixes the direction of each comparison rather than the
-absolute distance: the distances fall by about half between a run of 28 and one of 45 while the
-three orderings do not change. Below about 28 the runs are short enough to be dominated by local
+absolute distance: the distances fall by a quarter to a half between a run of 28 and one of 45
+while the three orderings do not change. Below about 28 the runs are short enough to be dominated by local
 annotation noise, which is progenitor-specific, and the comparisons fail, *juncea* first at a run
 of 20 and below and *carinata* at 12 and 20. *Juncea* failing first is expected: it is the one
 pairing whose two halves are measured against the two most dissimilar annotations, *rapa* and
@@ -646,10 +647,14 @@ of n anchors the ratio is sum(gaps) / [(n - 1) + sum(gaps)]. The gap is counted 
 progenitor**, because the quantity is gene loss in the Allo-subgenome: a progenitor gene sitting
 between two anchors with no partner is a gene the Allo-subgenome has lost.
 
-Table 3 draws its blocks from DAGChainer and MCScanX together. Computed on the DAGChainer set
-alone the six values are A~n~ 0.381, A~j~ 0.345, B~j~ 0.381, B~c~ 0.361, C~n~ 0.418 and
-C~c~ 0.433, all within 0.017 of Table 3, so the block set moves the value a little and the
-ordering not at all.
+Table 3 reports the mean over blocks, with the cap at 10 inclusive, on the 91 to 100% identity
+window used elsewhere in this paper. That is one of the 48 settings below, and every claim the
+paper makes from the ratio holds at all 48. The block set matters: the blocks used here are
+restricted to a high-identity window, which excludes the older triplication layer, and there both
+aggregations give all five claims at every setting. The WGDI blocks described in the Methods carry
+no such restriction, so they include triplication blocks with much larger gaps, and the ratios are
+higher throughout, 0.573 to 0.628. Pooling gaps over those blocks still recovers all five claims
+at every gap bound, while the mean of per-block ratios recovers only *carinata*.
 
 **Every claim the paper makes from the fractionation ratio is stable.** Forty-eight
 settings were tested, crossing the maximum gap (9, 10, 11), whether that bound is inclusive, the
