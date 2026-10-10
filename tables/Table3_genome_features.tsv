@@ -1,7 +1,7 @@
 Allo-subgenome	Host	Progenitor	Fractionation ratio	DCJ distance (common framework)	Median Ks	Ka/Ks (median)	Gene-proximal LTR
-An	B. napus	B. rapa	0.403	10	0.0376	0.1825	0.00554
-Aj	B. juncea	B. rapa	0.360	34	0.0355	0.1843	0.00532
-Bj	B. juncea	B. nigra	0.398	33	0.0398	0.1967	0.00450
-Bc	B. carinata	B. nigra	0.378	38	0.0405	0.1921	0.00416
-Cn	B. napus	B. oleracea	0.421	23	0.0222	0.2783	0.00817
-Cc	B. carinata	B. oleracea	0.442	49	0.0220	0.2893	0.00892
+An	B. napus	B. rapa	0.381	10	0.0376	0.1825	0.00554
+Aj	B. juncea	B. rapa	0.345	34	0.0355	0.1843	0.00532
+Bj	B. juncea	B. nigra	0.381	33	0.0398	0.1967	0.00450
+Bc	B. carinata	B. nigra	0.361	38	0.0405	0.1921	0.00416
+Cn	B. napus	B. oleracea	0.418	23	0.0222	0.2783	0.00817
+Cc	B. carinata	B. oleracea	0.433	49	0.0220	0.2893	0.00892

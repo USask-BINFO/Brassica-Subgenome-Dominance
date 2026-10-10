@@ -647,9 +647,9 @@ of n anchors the ratio is sum(gaps) / [(n - 1) + sum(gaps)]. The gap is counted 
 progenitor**, because the quantity is gene loss in the Allo-subgenome: a progenitor gene sitting
 between two anchors with no partner is a gene the Allo-subgenome has lost.
 
-Table 3 reports the mean over blocks, with the cap at 10 inclusive, on the 91 to 100% identity
-window used elsewhere in this paper. That is one of the 48 settings below, and every claim the
-paper makes from the ratio holds at all 48. The block set matters: the blocks used here are
+Table 3 reports the mean over blocks, with the cap at 10 inclusive, on the 92 to 100% identity
+window. That is one of the 48 settings below, and every claim the paper makes from the ratio
+holds at all 48. The block set matters: the blocks used here are
 restricted to a high-identity window, which excludes the older triplication layer, and there both
 aggregations give all five claims at every setting. The WGDI blocks described in the Methods carry
 no such restriction, so they include triplication blocks with much larger gaps, and the ratios are
